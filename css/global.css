@@ -11,6 +11,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -20,4 +21,20 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  max-width: 4ch;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial !important;
+    text-transform: capitalize;
+  }
 }
